@@ -1,0 +1,523 @@
+body {
+  background-color: #fff F;
+  font-size: 1.25rem;
+  font-family: "Comic Sans MS", "Trebuchet MS";
+  line-height: 1.5;
+  margin: 0;
+}
+hr {
+  border: 1px solid #eee;
+}
+.header-re {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+.header-post {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.header-post-head {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 900;
+}
+.header-post-head .header-post-time {
+  font-size: 1.5rem;
+}
+.header_background {
+  width: 100%;
+  height: 100vh;
+}
+.header_background .banner {
+  font-family: Helvetica, Tahoma, lantinghei sc, Microsoft Yahei, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.header_background .header-text-container {
+  position: relative;
+  top: 40%;
+}
+.header_background .blog-title .logo {
+  position: relative;
+  top: -50px;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+  font-size: 2em;
+  font-family: Comic Sans MS;
+  text-decoration: none;
+}
+.header_background .blog-subtitle .logo {
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
+  font-size: 2em;
+  text-decoration: none;
+}
+.header_background .blog-description .logo {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+.header_background .blog-iconfont {
+  display: flex;
+  justify-content: center;
+}
+.header_background .blog-iconfont .icon {
+  padding: 0 20px;
+  margin-top: 50px;
+  width: 3em;
+  height: 3em;
+  fill: currentColor;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.header_background .blog-iconfont .icon:hover {
+  transform: rotate(360deg);
+}
+.post {
+  margin: 1em auto;
+  background-color: #fff;
+}
+.posts {
+  width: 60%;
+  padding-left: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.posts .post-flex {
+  position: relative;
+  transition: 0.5s all;
+}
+.posts .post-flex:hover {
+  transform: scale(1.02);
+}
+.posts .post-image {
+  width: 100%;
+  height: 70vh;
+}
+.posts .post-image .post-cover-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+.posts .post-heading {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background: linear-gradient(transparent, #212121);
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+}
+.posts .post-heading .post-title {
+  font-size: 2em;
+}
+.posts .post-heading .post-title .post-title-link {
+  color: #fff;
+  text-decoration: none;
+}
+.posts .post-heading .post-title .post-title-link a {
+  color: #368ccb;
+  text-decoration: none;
+}
+.posts .post-heading .post-meta {
+  color: #fff;
+  font-size: 18px;
+}
+.posts .post-heading .post-meta .icon-pushpin {
+  width: 20;
+  height: 20;
+  margin-bottom: -3px;
+}
+.posts .post-heading .post-meta .post-tag {
+  background: #f5f5f5;
+  text-decoration: none;
+  color: #616161;
+  padding: 1px 5px;
+  border-radius: 1em;
+  transition: 0.1s all;
+}
+.posts .post-heading .post-meta .post-tag:hover {
+  color: #212121;
+  background: #fff;
+}
+.main {
+  background: #f3f3f3;
+}
+.footers {
+  margin: 0 0;
+  width: 100%;
+  background: #616161;
+  color: #f5f5f5;
+  text-align: center;
+}
+.footer {
+  padding: 1em auto;
+  width: 70%;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-around;
+}
+.footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+.footer a:hover {
+  color: #bdbdbd;
+}
+.footer .footer-list,
+.footer .footer-links {
+  text-align: center;
+  font-weight: 700;
+}
+.footer .footer-list ul,
+.footer .footer-links ul {
+  color: #f5f5f5;
+  margin-top: -8px;
+}
+.footer .footer-list ul li,
+.footer .footer-links ul li {
+  padding: 6px 0;
+}
+.footer-copyright {
+  font-size: 0.7em;
+  line-height: 1.1;
+}
+.footer-copyright a {
+  text-decoration: none;
+  color: #9e9e9e;
+}
+.footer-copyright b {
+  font-size: 0.5em;
+  color: #bdbdbd;
+}
+.posted {
+  background: #eee;
+}
+.post-index {
+  background: #fff;
+  width: 70%;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+.post-index .post-article {
+  width: 90%;
+  margin: auto auto;
+  padding: 20px 20px;
+}
+.post-paginator {
+  width: 60vw;
+  height: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  z-index: 0;
+}
+.post-paginator .post-pager {
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+}
+.post-paginator .post-pager .previous,
+.post-paginator .post-pager .next {
+  margin: auto auto;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.post-paginator .post-pager .previous .paginator-cover,
+.post-paginator .post-pager .next .paginator-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+  transform: 0.2s all;
+}
+.post-paginator .post-pager .previous .paginator-cover:hover,
+.post-paginator .post-pager .next .paginator-cover:hover {
+  opacity: 0.9;
+}
+.post-paginator .post-pager .previous .prev-text,
+.post-paginator .post-pager .next .prev-text,
+.post-paginator .post-pager .previous .next-text,
+.post-paginator .post-pager .next .next-text {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.post-paginator .post-pager .previous .prev-text .prev-title,
+.post-paginator .post-pager .next .prev-text .prev-title,
+.post-paginator .post-pager .previous .next-text .prev-title,
+.post-paginator .post-pager .next .next-text .prev-title,
+.post-paginator .post-pager .previous .prev-text .next-title,
+.post-paginator .post-pager .next .prev-text .next-title,
+.post-paginator .post-pager .previous .next-text .next-title,
+.post-paginator .post-pager .next .next-text .next-title {
+  color: #fff;
+  font-size: 2rem;
+}
+.tags {
+  background: #fff;
+  padding: 10px 10px;
+}
+.tags .tags-container {
+  width: 70%;
+  margin: auto auto;
+}
+.tags .tags-container .tags-post .tags-tag a {
+  text-decoration: none;
+  background: #616161;
+  color: #f5f5f5;
+  padding: 3px 5px;
+  border-radius: 1em;
+  margin: 5px 8px;
+  transition: 0.2s all;
+}
+.tags .tags-container .tags-post .tags-tag a:hover {
+  background: #90a4ae;
+}
+.tags .tags-container .tags-content {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+.tags .tags-container .tags-content .tags-tags-index .tags-icon {
+  padding: 0 20px;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.tags .tags-container .tags-content .tags-tags-index .tags-text {
+  font-size: 2rem;
+}
+.tags .tags-container .tags-content .tags-preview a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #757575;
+  transition: 0.2s all;
+}
+.tags .tags-container .tags-content .tags-preview a:hover {
+  color: #90a4ae;
+}
+.self {
+  width: 100%;
+  padding: 10px 0px;
+}
+.self hr {
+  border: 1px solid #fff;
+}
+.self .self-container {
+  width: 70%;
+  margin: auto auto;
+  color: #000;
+}
+.self .self-container a {
+  text-decoration: none;
+}
+.self .self-container .self-links::before {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  padding: 0 12px 0 3px;
+  content: '\201C';
+  text-align: center;
+  color: #666;
+}
+.self .self-container .self-links ul {
+  line-height: 2;
+  list-style: none;
+  display: block;
+  margin-left: 5%;
+}
+.self .self-container .self-information {
+  width: 100%;
+}
+.self .self-container .self-information .self-head {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.self .self-container .self-information .self-head .self-image {
+  box-sizing: border-box;
+  padding: 5px 5px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 0 1px #000;
+  border-radius: 100%;
+}
+.self .self-container .self-information .self-head .self-image img {
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+.self .self-container .self-information .self-proverbs {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #9e9e9e;
+}
+.self .self-container .self-information .self-info {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #424242;
+}
+.self .self-container .self-information .self-address {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #9e9e9e;
+}
+.self .self-container .self-information .self-address a {
+  color: #9e9e9e;
+}
+.self .self-container .self-information .self-stack {
+  width: 60%;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 1rem;
+}
+.self .self-container .self-information .self-stack .icon {
+  padding: 0 3px;
+  width: 4em;
+  height: 4em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.topbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100%;
+  z-index: 1;
+}
+.topbar .topbar-container {
+  background: transparent;
+  height: 100%;
+}
+.topbar .topbar-container .topbar-cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar .topbar-container .topbar-cover .topbar-back {
+  height: 100%;
+}
+.topbar .topbar-container .topbar-cover .topbar-back .icon {
+  cursor: pointer;
+  position: relative;
+  top: 30;
+  left: 30%;
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor;
+  overflow: hidden;
+}
+.topbar .topbar-container .topbar-cover .topbar-info {
+  height: 100%;
+}
+.topbar .topbar-container .topbar-cover .topbar-info .icon {
+  cursor: pointer;
+  position: relative;
+  top: 30;
+  right: 30;
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor;
+  overflow: hidden;
+  transition: 0.2s all ease;
+}
+.topbar .topbar-container .topbar-cover .topbar-info .icon:hover {
+  transform: rotate(90deg);
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #444;
+  transition: all 500ms ease;
+}
+#sidebar .sidebar-container {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: auto;
+  height: 100%;
+}
+#sidebar .sidebar-container .sidebar-close {
+  display: flex;
+  justify-content: flex-end;
+}
+#sidebar .sidebar-container .sidebar-close .icon {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: currentColor;
+  overflow: hidden;
+  transition: 0.2s all;
+}
+#sidebar .sidebar-container .sidebar-close .icon:hover {
+  transform: scale(1.1);
+}
+#sidebar .sidebar-container .sidebar-info {
+  width: 80%;
+  margin: auto auto;
+  color: #f5f5f5;
+  text-align: center;
+}
+#sidebar .sidebar-container .sidebar-info div {
+  padding: 10px 0;
+}
+#sidebar .sidebar-container .sidebar-info .sidebar-info-title {
+  font-size: 2rem;
+}
