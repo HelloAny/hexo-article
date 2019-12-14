@@ -62,10 +62,42 @@
         </div>
     </nav>
 </sidebar>
+
+<script>
+    var sidebarFlag = false
+    var sidebar = document.getElementById('sidebar')
+
+    function toggleSidebar() {
+        if (sidebarFlag == true) {
+            setTimeout(function () {
+                sidebar.style.right = -500 + 'px'
+                sidebarFlag = false
+            }, 50)
+        } else {
+            setTimeout(function () {
+                sidebar.style.right = 0
+                sidebarFlag = true
+            }, 50)
+        }
+
+    }
+    document.onclick = function (event) {
+        if (event.target.id != "sidebar" && sidebarFlag == true) {
+            setTimeout(function () {
+                sidebar.style.right = -500 + 'px'
+                sidebarFlag = false
+            }, 50)
+        }
+    }
+    sidebar.addEventListener("click", function (event) {
+        event = event || window.event;
+        event.stopPropagation();
+    });
+</script>
         </div>
     </div>
 </section>
-    <div class="header-post" style="background-image: url('http://aynup.com/api/public/img/1575729887950831273dee66391517d9712e6e30845df.png');">
+    <div class="header-post lazyload" style="background-image: url();" data-src="url('http://aynup.com/api/public/img/1575729887950831273dee66391517d9712e6e30845df.png')">
     </div>
     <div class="header-post-head">
         <div class="header-post-title">
@@ -79,7 +111,17 @@
     
 
 </header>
+
+<style>
+
+</style>
     <main class="main">
+        <section class="wave-cover">
+            <div class="wave_0 wave"></div>
+            <div class="wave_1 wave"></div>
+            <div class="wave_2 wave"></div>
+            <div class="wave_3 wave"></div>
+        </section>
         <article class="posted">
     <div class="post-index">
         <section class="post-article">
@@ -267,9 +309,7 @@
        </div>
    </div>
 </article>
-    </main>
-</body>
-<footer>
+        <footer>
     
     <div class="footers">
         <div class="footer">
@@ -322,37 +362,12 @@
     </div>
     
 </footer>
+    </main>
+
+</body>
+
 
 </html>
 
-<script>
-    var sidebarFlag = false
-    const sidebar = document.getElementById('sidebar')
 
-    function toggleSidebar() {
-        if (sidebarFlag == true) {
-            setTimeout(function () {
-                sidebar.style.right = -500 + 'px'
-                sidebarFlag = false
-            }, 50)
-        } else {
-            setTimeout(function () {
-                sidebar.style.right = 0
-                sidebarFlag = true
-            }, 50)
-        }
-
-    }
-    document.onclick = function (event) {
-        if (event.target.id != "sidebar" && sidebarFlag == true) {
-            setTimeout(function () {
-                sidebar.style.right = -500 + 'px'
-                sidebarFlag = false
-            }, 50)
-        }
-    }
-    sidebar.addEventListener("click", function (event) {
-        event = event || window.event;
-        event.stopPropagation();
-    });
-</script>
+<script type='text/javascript' src="/js/lazyload.js"></script>
