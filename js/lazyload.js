@@ -12,13 +12,11 @@
     iteratee(root)
   }
 }(window, function ($win) {
-  var bodyScrollHeight = document.body.scrollTop; // body滚动高度
-  var windowHeight = window.innerHeight; // 视窗高度
+  var windowHeight = $win.innerHeight; // 视窗高度
   var imgs = document.getElementsByClassName('lazyload');
 
   for (var i = 0; i < imgs.length; i++) {
-    var imgHeight = imgs[i].offsetTop; // 图片距离顶部高度  
-    if (imgHeight < windowHeight + bodyScrollHeight) {
+    if (getOffsetTop(imgs[i], windowHeight)) {
       if (imgs[i].style.backgroundImage) {
         imgs[i].style.backgroundImage = imgs[i].getAttribute('data-src')
       } else {
@@ -26,5 +24,14 @@
       }
       imgs[i].className = imgs[i].className.replace('lazyload', '')
     }
+  }
+
+  /**
+   * 判断图片高度
+   * @return <Boolean>
+   */
+  function getOffsetTop(element, winHeight) {
+    var ele = element instanceof Object ? element : Object.keys(element)
+    return ele.getBoundingClientRect().top < winHeight + 100 //距离顶部100px时开始加载图片
   }
 }))
