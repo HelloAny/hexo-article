@@ -1,6 +1,6 @@
 body {
   background-color: #fff F;
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   font-family: "Comic Sans MS", "Trebuchet MS";
   line-height: 1.5;
   margin: 0;
@@ -289,30 +289,6 @@ hr {
   width: 100%;
   position: absolute;
 }
-.header_background .banner .AmiKara-background {
-  position: absolute;
-  left: 2%;
-  top: 2%;
-  background: #f8e329;
-  height: 40px;
-  width: 120px;
-  opacity: 0.7;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.header_background .banner .AmiKara-background .AmiKara {
-  padding: 10px 2px;
-  transform: all 0.2s;
-}
-.header_background .banner .AmiKara-background:hover {
-  background: #fff;
-  transform: rotate(2deg);
-  box-shadow: 0 0 5px #f8e329;
-}
-.header_background .banner .AmiKara-background:hover .AmiKara {
-  transform: rotate(-4deg);
-}
 .header_background .header-text-container {
   position: relative;
   top: 40%;
@@ -359,24 +335,33 @@ hr {
 }
 .header_background .blog-description .logo {
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: none;
 }
 .header_background .blog-iconfont {
-  display: flex;
+  width: 25vw;
+  margin: 20px auto;
   justify-content: center;
+  white-space: nowrap;
+  background: rgba(255,255,255,0.6);
+  border-radius: 5em;
+  transition: all 0.3s;
+}
+.header_background .blog-iconfont:hover {
+  background: rgba(255,255,255,0.8);
 }
 .header_background .blog-iconfont .icon {
-  padding: 0 20px;
-  margin-top: 50px;
-  width: 3em;
-  height: 3em;
+  cursor: pointer;
+  padding: 0 1.2vw;
+  margin-top: 10px;
+  width: 3vw;
+  height: 3vw;
   fill: currentColor;
   overflow: hidden;
-  transition: 0.5s all;
+  transition: 0.3s all ease-out;
 }
 .header_background .blog-iconfont .icon:hover {
-  transform: rotate(360deg);
+  transform: scale(1.1);
 }
 .post {
   margin: 1em auto;
@@ -454,6 +439,7 @@ hr {
   width: 100%;
   position: absolute;
   top: 100vh;
+  box-shadow: 0px -200px 200px -200px #000;
 }
 .footers {
   margin: 0 0;
@@ -838,4 +824,88 @@ hr {
 .wave_3 {
   animation-delay: -3.2s;
   opacity: 0.8;
+}
+.headBar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  opacity: 0.9;
+  background: rgba(255,255,255,0.9);
+  z-index: 1;
+  transition: 0.3s all ease-out;
+}
+.headBar:hover {
+  opacity: 1;
+  background: #fff;
+}
+.AmiKara-background {
+  position: fixed;
+  left: 2%;
+  top: 2%;
+  z-index: 2;
+  background: #f8e329;
+  height: 40px;
+  width: 120px;
+  opacity: 0.7;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.AmiKara-background .AmiKara {
+  padding: 10px 8px;
+  transform: all 0.2s;
+}
+.AmiKara-background:hover {
+  transform: rotate(2deg);
+  box-shadow: 0 0 5px #f8e329;
+}
+.AmiKara-background:hover .AmiKara {
+  transform: rotate(-4deg);
+}
+.bar {
+  width: 40vw;
+  margin: auto auto;
+}
+.bar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+.bar ul li {
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+}
+.bar ul li .headBar_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-right: 2px;
+}
+.bar ul li:hover {
+  color: #fa742b;
+}
+.navg {
+  position: absolute;
+  border-radius: 10px;
+  background: #fff;
+  width: 5%;
+}
+.nav {
+  display: none;
+  font-size: 1.3vw;
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+}
+.nav a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #fa742b;
 }
